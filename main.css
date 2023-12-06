@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin:  0 auto;
+}
+
+
+header .container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .container{
+    display: flex;
+    justify-content: space-between;
+
+    align-items: start;
+ }
+
+
+
+
+
+
+
+header{
+    background-color: rgb(0, 89, 255);
+    padding: 15px 0;
+
+}
+
+header h1{
+    color: rgba(255, 255, 255, 0.973);
+    font-size: 35px;
+   font-weight: bolder;
+   
+    
+}
+
+
+ nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    padding: 0 10px;
+}
+
+section{
+    margin-top: 50px;
+}
+
+section img{
+    margin-right: 55px;
+}
+
+section  h2{
+    color:rgb(0, 89, 255) ;
+    border-bottom:3px solid rgb(0, 89, 255)  ;
+    padding-bottom: 15px;
+    width: 100%;
+
+
+
+
+
+    margin-bottom: 25px;
+    font-weight: bolder;
+    font-size: 2em;
+
+
+}
+
+
+#produto .container {
+    display: block;
+}
+
+.colunas{
+    display: grid;
+    grid-template-columns: repeat(4,24.25%);
+    column-gap: 1%;
+    list-style: none;
+}
+
+.no-borde{
+    color: black;
+    border: none;
+    font-size: 27px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    padding-bottom: 13px;
+
+   
+}
+  
+select{
+    width: 100%;
+    padding: 9px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    outline-color: black;
+}
+
+section .font{
+    font-size: 25px;
+    
+
+}
+
+
+
+button{
+    padding: 11px;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 5px;
+    background-color: rgb(0, 89, 255) ;
+    color: aliceblue;
+    border: none; 
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+
+.ajust-font{
+    font-size: 20.5px;
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        flex-wrap: wrap;
+        padding: 3px 3px;
+    }
+
+    .container #fotoloja {
+        max-width: fit-content;
+    }
+    .container img {
+        max-width: 100px
+    }
+
+    #produto {
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+
+}
